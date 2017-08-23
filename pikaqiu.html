@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>皮卡丘-css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .ct {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 100vw;
+            min-height: 100vh;
+            background-color: yellow;
+            border: none;
+        }
+
+        .eyes {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            border-radius: 50%;
+            background: #000;
+        }
+
+        .eyes-left {
+            margin-left: -100px;
+            margin-top: -80px;
+        }
+
+        .eyes-right {
+            margin-left: 100px;
+            margin-top: -80px;
+        }
+
+        .eyes:before {
+            content: '';
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            position: absolute;
+            top: 2px;
+            left: 4px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .face {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .face-left {
+            margin-left: -180px;
+            margin-top: 20px;
+        }
+
+        .face-right {
+            margin-left: 160px;
+            margin-top: 20px;
+        }
+
+        .nose {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: 16px;
+            margin-top: -40px;
+            z-index: 3;
+            border: 15px solid rgba(0, 0, 0, 0);
+            border-top: 15px solid #000;
+            border-radius: 50%;
+        }
+
+        .mouth {
+            width: 80px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 0;
+            margin-top: -160px;
+            margin-left: -10px;
+            background-color: #e27272;
+            border-radius: 50%;
+        }
+
+        .tongue {
+            background-color: yellow;
+            width: 120%;
+            margin-left: -10px;
+            margin-top: -10px;
+            height: 50%;
+            border: none;
+        }
+
+        .mouth:before {
+            content: '';
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            margin-top: -90px;
+            margin-left: -45px;
+            background-color: yellow;
+            border: 2px solid rgba(0, 0, 0, 0);
+            border-bottom: 2px solid #000;
+            border-radius: 10px 20px 180px 120px;
+
+        }
+
+        .mouth:after {
+            content: '';
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            margin-top: -90px;
+            margin-left: 20px;
+            background-color: yellow;
+            border: 2px solid rgba(0, 0, 0, 0);
+            border-bottom: 2px solid #000;
+            border-radius: 0px 0px 120px 180px;
+
+        }
+    </style>
+    <link rel="stylesheet" href="../../../Desktop/frontend/animation/animate.min.css">
+</head>
+
+<body>
+<div class="ct">
+    <div class="eyes-left eyes"></div>
+    <div class="eyes-right eyes"></div>
+    <div class="face-left face"></div>
+    <div class="face-right face"></div>
+    <div class="mouth">
+        <div class="tongue"></div>
+    </div>
+    <div class="tongue"></div>
+    <div class="nose"></div>
+</div>
+</body>
+</html>
